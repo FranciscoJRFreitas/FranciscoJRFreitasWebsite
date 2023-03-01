@@ -1,0 +1,38 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  display: block;  /* No floating content on sides */
+  overflow: hidden;
+}
+
+a p{
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 60px;
+}
+
+button {
+  margin: 3px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 127.5, 80);
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: rgb(240, 80, 22)
+}
+
+button:active {
+  background-color: rgb(240, 80, 22);
+  transform: translateY(3px);
+}
