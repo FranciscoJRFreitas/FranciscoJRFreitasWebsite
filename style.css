@@ -160,7 +160,7 @@ svg{
   flex-direction: column;
   position: absolute;
   top: 90%;
-  left: 45%;
+  left: calc(50% - 50px);
   opacity: 0;
   color: var(--color-text);
   transform: translate(-50%, -50%);
