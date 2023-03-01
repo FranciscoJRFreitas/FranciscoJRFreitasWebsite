@@ -500,7 +500,7 @@ svg{
     top: 140px;
   }
   .hero-wrapper{
-    width: calc(100%-80px);
+    width: calc(100% - 80px);
   }
   .hero-main-title{
     font-size: 26px;
