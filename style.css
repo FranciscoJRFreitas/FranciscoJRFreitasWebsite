@@ -502,6 +502,10 @@ svg{
 /* Media Queries */
 
 @media (max-width: 968px){
+  .toggle-bar{
+    top: 12px;
+    right: 12px;
+  }
   .section{
     width: 100%;
   }
