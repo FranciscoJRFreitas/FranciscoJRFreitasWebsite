@@ -387,6 +387,13 @@ export default class Preloader extends EventEmitter {
                     },
                     "chair"
                 )
+                .set(
+                    ".arrow-svg-wrapper .scroll-msg",
+                    {
+                      innerHTML: "Keep Scrolling!",
+                    },
+                    "changetext"
+                )
                 .to(".arrow-svg-wrapper", {
                     opacity: 1,
                     onComplete: resolve,

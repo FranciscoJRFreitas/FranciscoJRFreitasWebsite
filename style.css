@@ -156,13 +156,29 @@ svg{
 }
 
 .arrow-svg-wrapper{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 45%;
   opacity: 0;
   color: var(--color-text);
   transform: translate(-50%, -50%);
   animation: bounce 0.5s ease-in alternate infinite;
+}
+
+.arrow-svg-wrapper svg{
+  position: relative;
+  justify-content: center;
+  left: 40%;
+  opacity: 1;
+}
+
+.arrow-svg-wrapper p{
+  position: relative;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
 }
 
 @keyframes bounce {
