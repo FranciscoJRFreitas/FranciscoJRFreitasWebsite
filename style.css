@@ -506,6 +506,10 @@ svg{
     top: 12px;
     right: 12px;
   }
+  .arrow-svg-wrapper{
+    top: 87%;
+    left: 30%;
+  }
   .section{
     width: 100%;
   }
