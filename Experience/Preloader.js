@@ -394,6 +394,10 @@ export default class Preloader extends EventEmitter {
                     },
                     "changetext"
                 )
+                .to(".goTop", {
+                    opacity: 1,
+                    onComplete: resolve,
+                })
                 .to(".arrow-svg-wrapper", {
                     opacity: 1,
                     onComplete: resolve,
