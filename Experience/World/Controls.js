@@ -117,6 +117,45 @@ export default class Controls {
                     }
                 );
 
+                this.firstInBetweenMoveTimeline = new GSAP.timeline({
+                    scrollTrigger: {
+                        trigger: ".first-inbetween-move",
+                        start: "top top",
+                        end: "bottom bottom",
+                        scrub: 0.6,
+                        invalidateOnRefresh: true,
+                    },
+                })
+                .to(
+                    this.room.position,
+                    {
+                        x: () => {
+                            return 1;
+                        },
+                        z: () => {
+                            return this.sizes.height * 0.0032 + 1;
+                        },
+                    },
+                    "same"
+                )
+                .to(
+                    this.room.scale,
+                    {
+                        x: 0.3,
+                        y: 0.3,
+                        z: 0.3,
+                    },
+                    "same"
+                )
+                .to(
+                    this.rectLight,
+                    {
+                        width: 0.5 * 4,
+                        height: 0.7 * 4,
+                    },
+                    "same"
+                );
+
                 // Second section -----------------------------------------
                 this.secondMoveTimeline = new GSAP.timeline({
                     scrollTrigger: {

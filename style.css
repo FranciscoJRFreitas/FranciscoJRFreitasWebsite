@@ -465,7 +465,24 @@ svg{
   border-radius: 2px;
 }
 
+#spotifybtn{
+  font-size: 16px;
+  background: linear-gradient(to right,
+      var(--color-blue-light),
+      var(--color-pink-light)
+  );
+}
+
+#herebtn0{
+  font-size: 16px;
+  background: linear-gradient(to right,
+      var(--color-blue-light),
+      var(--color-green-light)
+  );
+}
+
 #herebtn1{
+  font-size: 16px;
   background: linear-gradient(to right,
       var(--color-blue-light),
       var(--color-pink-light)
@@ -473,9 +490,18 @@ svg{
 }
 
 #herebtn2{
+  font-size: 16px;
   background: linear-gradient(to right,
       var(--color-blue-light),
       var(--color-pink-light)
+  );
+}
+
+#herebtn3{
+  font-size: 16px;
+  background: linear-gradient(to right,
+      var(--color-blue-light),
+      var(--color-green-light)
   );
 }
 
