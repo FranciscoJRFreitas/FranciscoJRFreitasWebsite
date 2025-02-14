@@ -465,7 +465,14 @@ svg{
   border-radius: 2px;
 }
 
-#herebtn{
+#herebtn1{
+  background: linear-gradient(to right,
+      var(--color-blue-light),
+      var(--color-pink-light)
+  );
+}
+
+#herebtn2{
   background: linear-gradient(to right,
       var(--color-blue-light),
       var(--color-pink-light)
