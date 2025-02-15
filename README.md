@@ -42,7 +42,11 @@ If you want to run the project locally, follow these steps:
    ```sh
    cd FranciscoJRFreitasWebsite
    ```
-3. Start the vite server with:
+3. Install package dependencies with npm:
+   ```sh
+   npm install
+   ```
+4. Start the vite server with npm:
    ```sh
    npm run dev
    ```
