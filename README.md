@@ -1,4 +1,11 @@
-# FranciscoJRFreitasWebsite
-This is my portfolio!
-You can acess it by accessing this link: 
-:globe_with_meridians: [Personal webpage](https://franciscofreitas.netlify.app)
+# 🌐 FranciscoJRFreitasWebsite  
+
+Welcome to my personal portfolio! 🚀  
+
+You can check it out here:  
+
+🔗 **[Visit my personal webpage](https://franciscofreitas.netlify.app)**  
+
+This website showcases my projects, skills, and experience. Stay tuned for updates!  
+
+Feel free to explore, and don't hesitate to connect! 😊  
