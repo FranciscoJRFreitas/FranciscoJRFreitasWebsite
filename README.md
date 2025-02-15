@@ -1,4 +1,4 @@
-# 🌐 FranciscoJRFreitasWebsite  
+# 🌐 My Portfolio  
 
 Welcome to my **personal interactive portfolio**! 🚀  
 
@@ -36,13 +36,17 @@ If you want to run the project locally, follow these steps:
 
 1. Clone this repository:  
    ```sh
-   git clone https://github.com/FranciscoJRFreitas/FranciscoJRFreitasWebsite.git
+   git clone https://github.com/FranciscoJRFreitas/Portfolio.git
    ```
 2. Navigate to the project directory:  
    ```sh
-   cd FranciscoJRFreitasWebsite
+   cd Portfolio
    ```
-3. Start the vite server with:
+3. Install package dependencies with npm:
+   ```sh
+   npm install
+   ```
+4. Start the vite server with npm:
    ```sh
    npm run dev
    ```
