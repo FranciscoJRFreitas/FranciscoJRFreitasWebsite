@@ -15,6 +15,8 @@ html, body{
 } */
 
 h1,
+h2,
+h3,
 section,
 p,
 span,
@@ -41,6 +43,7 @@ svg{
   --color-pink: var(--color-pink-light);
   --color-green: var(--color-green-light);
   --color-blue: var(--color-blue-light);
+  --color-blue-green: var(--color-blue-light);
 }
 
 .dark-theme{
@@ -49,6 +52,7 @@ svg{
   --color-pink: var(--color-text-dark);
   --color-green: var(--color-text-dark);
   --color-blue: var(--color-text-dark);
+  --color-blue-green: var(--color-green-light);
 }
 
 /* Experience --------------------------------------------- */
@@ -505,6 +509,68 @@ svg{
   );
 }
 
+/* Default h2 styling */
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  transition: color 0.5s, border-bottom 0.5s ease-in-out;
+}
+
+/* Ensure the correct border color for each section */
+.section-detail-wrapper h2 {
+  border-bottom: 4px solid var(--color-pink); /* Default */
+}
+
+.section-detail-wrapper.blue-text h2 {
+  border-bottom: 4px solid var(--color-blue);
+}
+
+.section-detail-wrapper.green-text h2 {
+  border-bottom: 4px solid var(--color-green);
+}
+
+
+ul {
+  list-style: none;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+/* Styling for li */
+li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text);
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Custom bullet point */
+li::before {
+  content: "●";
+  font-size: 12px;
+  color: var(--color-blue-green);
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* Hover effect for li */
+li:hover {
+  color: var(--color-blue-green);
+  transition: color 0.3s ease-in-out;
+}
+
+.dark-theme li::before {
+  color: var(--color-blue-green);
+}
+
 .wrapper {
 width: 40px;
 }
@@ -521,13 +587,13 @@ margin-left: -20px;
 }
 
 .circle-btn:hover .icon {
-color: var(--color-pink);
+color: var(--color-blue);
 }
 
 .circle-btn.btn-1 .circle-bg {
 border-radius: 50%;
 transition: background .5s linear;
-border: 2px solid var(--color-blue);
+border: 2px solid var(--color-green);
 backface-visibility: hidden;
 }
 
@@ -536,8 +602,8 @@ border-color: transparent;
 background: transparent;
 animation: circleround cubic-bezier(0.17, 0.13, 0.28, 1) 0.5s;
 animation-fill-mode: forwards;
-border-right-color: var(--color-pink);
-border-bottom-color: var(--color-pink);
+border-right-color: var(--color-blue);
+border-bottom-color: var(--color-blue);
 }
 
 .icon {
@@ -548,7 +614,7 @@ z-index: 2;
 font-size: 15px;
 width: 100%;
 height: 100%;
-color: var(--color-blue);
+color: var(--color-green);
 text-align: center;
 line-height: 80px;
 transition: color .2s ease-in;
