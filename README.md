@@ -23,7 +23,7 @@ This project is designed to provide an engaging and immersive way to explore my 
 🔹 **Fully Responsive** – Optimized for desktop and mobile viewing.  
 
 ## 📜 Website Sections  
-1. **Introduction** – Who I am and what I do.  
+1. **Introduction** – Who I am and my ambitions.
 2. **My Interests** – My hobbies, passions, and inspirations.  
 3. **Projects & Experience** – Showcasing my key work and skills.  
 4. **Contact** – Ways to reach me.  
@@ -36,17 +36,17 @@ If you want to run the project locally, follow these steps:
 
 1. Clone this repository:  
    ```sh
-   git clone https://github.com/FranciscoJRFreitas/interactive-portfolio.git
+   git clone https://github.com/FranciscoJRFreitas/FranciscoJRFreitasWebsite.git
    ```
 2. Navigate to the project directory:  
    ```sh
-   cd interactive-portfolio
+   cd FranciscoJRFreitasWebsite
    ```
-3. Open `index.html` in your browser or start a local server:  
+3. Start the vite server with:
    ```sh
-   npx http-server
+   npm run dev
    ```
-   Then open `http://localhost:8080` in your browser.  
+   Then open `http://localhost:3000/` in your browser.  
 
 ## 📬 Contact  
 📧 Email: franfreitas2002@gmail.com  
