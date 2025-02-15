@@ -44,6 +44,7 @@ svg{
   --color-green: var(--color-green-light);
   --color-blue: var(--color-blue-light);
   --color-blue-green: var(--color-blue-light);
+  --color-pink-green: var(--color-pink-light);
 }
 
 .dark-theme{
@@ -53,6 +54,7 @@ svg{
   --color-green: var(--color-text-dark);
   --color-blue: var(--color-text-dark);
   --color-blue-green: var(--color-green-light);
+  --color-pink-green: var(--color-green-light);
 }
 
 /* Experience --------------------------------------------- */
@@ -663,6 +665,61 @@ display: block;
 .green-background{
   background-color: var(--color-green);
 }
+
+  .fork-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 10px;
+  }
+
+  .fork-button:hover {
+    color: var(--color-pink-green);
+  }
+
+  /* Tooltip Styling */
+  .fork-button .tooltip {
+    visibility: hidden;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .fork-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Tooltip Arrow */
+  .fork-button .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--color-text) transparent transparent transparent;
+  }
 
 /* Keyframe animations */
 
